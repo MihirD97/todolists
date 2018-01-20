@@ -116,5 +116,7 @@ class Assignment
       # accept an id input parameter
       # use the TodoList Model class to remove the TodoList associated with the `id` primary key.
       # (no return is required)
+      TodoList.find_by(id: id).destroy
+      nil
   end
 end
